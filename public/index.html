@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-page="analytics">
+
+<head>
+  <link rel="stylesheet" href="accordion.1ea5bdaf.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyonder Admin | Analytics</title>
+  <link rel="icon" type="icon" href="favicon.e603f98d.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="page-loader" class="placeholder-glow">
+    <aside class="pe-none sidebar">
+      <div class="logo mb-2"> <svg width="28" height="28" fill="none" viewBox="0 0 275 275">
+          <circle cx="137.5" cy="137.5" r="137.5" fill="var(--bs-logo-fill)" />
+          <path fill="var(--bs-logo-sub-fill)"
+            d="M132.093 72.478a1 1 0 0 1 .899-.563h36.983a1 1 0 0 1 .794 1.608l-25.462 33.266a1 1 0 0 0 .794 1.608h19.878a1 1 0 0 1 .808 1.589l-22.001 30.15a1 1 0 0 0 .808 1.589h15.487a1 1 0 0 1 .822 1.57l-53.492 77.093c-.698 1.006-2.245.117-1.728-.993l26.822-57.556a1 1 0 0 0-.906-1.423h-20.97a1 1 0 0 1-.853-1.521l21.112-34.564a1 1 0 0 0-.854-1.522h-21.84a1 1 0 0 1-.899-1.437z" />
+        </svg>
+        <div class="placeholder placeholder-logo w-28"></div>
+      </div>
+      <div class="d-flex flex-column" style="gap:1.35rem">
+        <div class="mb-2"></div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-32"></span> </div>
+        <div class="align-items-center d-flex gap-7 mb-11 px-5"> <span
+            class="h-3.5 placeholder rounded-circle w-3.5"></span> <span class="ms-3 placeholder w-20"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-16"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-20"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-16"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-32"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-20"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-14"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-20"></span> </div>
+        <div class="align-items-center d-flex gap-7 px-5"> <span class="h-3.5 placeholder rounded-circle w-3.5"></span>
+          <span class="ms-3 placeholder w-24"></span> </div>
+      </div>
+    </aside>
+    <div class="flex-grow-1 h-100">
+      <header class="header"> <span class="d-lg-none h-5 placeholder rounded-circle w-5"></span> <span
+          class="d-lg-block d-none placeholder w-60"></span> <i class="ms-auto"></i>
+        <div class="align-items-center d-flex" style="gap:1.85rem"> <span
+            class="d-lg-block d-none h-5 placeholder rounded-circle w-5"></span> <span
+            class="d-lg-block d-none h-5 placeholder rounded-circle w-5"></span> <span
+            class="h-5 placeholder rounded-circle w-5"></span> <span class="h-5 placeholder rounded-circle w-5"></span>
+          <span class="h-5 placeholder rounded-circle w-5"></span> <span
+            class="h-8 placeholder rounded-circle w-8"></span> </div>
+      </header>
+    </div>
+    <div class="d-grid h-100 pe-none place-items-center position-absolute start-0 top-0 w-100">
+      <div class="spinner-border" role="status"> <span class="visually-hidden">Loading...</span> </div>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar" data-simplebar> <a href class="logo"> <svg width="28" height="28" fill="none"
+        viewBox="0 0 275 275">
+        <circle cx="137.5" cy="137.5" r="137.5" fill="var(--bs-logo-fill)" />
+        <path fill="var(--bs-logo-sub-fill)"
+          d="M132.093 72.478a1 1 0 0 1 .899-.563h36.983a1 1 0 0 1 .794 1.608l-25.462 33.266a1 1 0 0 0 .794 1.608h19.878a1 1 0 0 1 .808 1.589l-22.001 30.15a1 1 0 0 0 .808 1.589h15.487a1 1 0 0 1 .822 1.57l-53.492 77.093c-.698 1.006-2.245.117-1.728-.993l26.822-57.556a1 1 0 0 0-.906-1.423h-20.97a1 1 0 0 1-.853-1.521l21.112-34.564a1 1 0 0 0-.854-1.522h-21.84a1 1 0 0 1-.899-1.437z" />
+      </svg> Beyonder Admin </a>
+    <div class="p-2">
+      <ul class="menu">
+        <li class="menu-title">Dashboards</li>
+        <li> <a href="index.html"> <i class="ph ph-globe"></i> <span>Analytics</span> </a> </li>
+        <li> <a href="e-commerce.html"> <i class="mt-n0.5 ph ph-shopping-bag"></i> <span>E-Commerce</span> </a> </li>
+        <li class="menu-title">Application Views</li>
+        <li class="menu-sub"> <a href> <i class="ph ph-user-circle"></i> <span>User</span> </a>
+          <ul>
+            <li><a href="user-profile.html">Profile</a></li>
+            <li><a href="user-timeline.html">Timeline</a></li>
+            <li><a href="user-photos.html">Photos</a></li>
+            <li><a href="user-connections.html">Connections</a></li>
+            <li><a href="user-preferences.html">Preferences</a></li>
+          </ul>
+        </li>
+        <li> <a href="file-manager.html"> <i class="ph ph-folder"></i> <span>File Manager</span> </a> </li>
+        <li> <a href="contacts.html"> <i class="ph ph-user-rectangle"></i> <span>Contacts</span> </a> </li>
+        <li> <a href="mail.html"> <i class="ph ph-at"></i> <span>Mail</span> </a> </li>
+        <li> <a href="messages.html"> <i class="ph ph-chat-circle-text"></i> <span>Messages</span> </a> </li>
+        <li> <a href="photos.html"> <i class="ph ph-image"></i> <span>Photos</span> </a> </li>
+        <li> <a href="todo-lists.html"> <i class="ph ph-check-circle"></i> <span>Todo Lists</span> </a> </li>
+        <li> <a href="calendar.html"> <i class="ph ph-calendar-blank"></i> <span>Calendar</span> </a> </li>
+        <li class="menu-title">Miscellaneous</li>
+        <li class="menu-sub"> <a href> <i class="ph ph-browser"></i> <span>Sample Pages</span> </a>
+          <ul>
+            <li><a href="invoice.html">Invoice</a></li>
+            <li><a href="pricing-table.html">Pricing Table</a></li>
+            <li><a href="search-results.html">Search Results</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="forgot-password.html">Forgot Password</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+            <li><a href="error.html">Error</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub"> <a href> <i class="ph ph-text-t"></i> <span>Content</span> </a>
+          <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="figures.html">Figures</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="tables.html">Tables</a></li>
+          </ul>
+        </li>
+        <li> <a href="icons.html"> <i class="ph ph-smiley"></i> <span>Icons</span> </a> </li>
+        <li class="menu-sub"> <a href> <i class="ph ph-puzzle-piece"></i> <span>Components</span> </a>
+          <ul>
+            <li><a href="accordion.html">Accordion</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="breadcrumb.html">Breadcrumb</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="button-groups.html">Button Groups</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="carousel.html">Carousel</a></li>
+            <li><a href="collapse.html">Collapse</a></li>
+            <li><a href="dropdown.html">Dropdown</a></li>
+            <li><a href="listgroup.html">List Group</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="nav.html">Nav</a></li>
+            <li><a href="offcanvas.html">Offcanvas</a></li>
+            <li><a href="pagination.html">Pagination</a></li>
+            <li><a href="placeholders.html">Placeholders</a></li>
+            <li><a href="popovers.html">Popovers</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="spinners.html">Spinners</a></li>
+            <li><a href="toasts.html">Toasts</a></li>
+            <li><a href="tooltips.html">Tooltips</a></li>
+            <li><a href="datatables.html">Datatables</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub"> <a href> <i class="ph ph-notebook"></i> <span>Forms</span> </a>
+          <ul>
+            <li><a href="form-elements.html">Form Elements</a></li>
+            <li><a href="input-groups.html">Input Groups</a></li>
+            <li><a href="form-layouts.html">Layouts</a></li>
+            <li><a href="form-templates.html">Templates</a></li>
+            <li><a href="form-validation.html">Validation</a></li>
+            <li><a href="form-components.html">Components</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub"> <a href> <i class="ph ph-chart-line"></i> <span>Charts and Maps</span> </a>
+          <ul>
+            <li><a href="charts.html">Charts</a></li>
+            <li><a href="maps.html">Maps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <header class="header"> <button type="button" class="d-xl-none icon me-2 ms-n1" id="sidebar-toggle"> <svg width="15"
+        height="12" fill="none" class="pe-none" viewBox="0 0 16 13">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M1 1h14M1 6.25h9.546M1 11.5h14" />
+      </svg> <span class="visually-hidden">Open Sidebar</span> </button>
+    <div class="d-lg-flex d-none search">
+      <div class="search-helper"> <i class="ph ph-magnifying-glass"></i> <i class="ph ph-arrow-left"></i> </div> <input
+        type="text" placeholder="Search for files, reports and records">
+    </div> <i class="ms-auto"></i>
+    <ul class="header-menu ms-6">
+      <li class="d-lg-none"> <button type="button" class="ph ph-magnifying-glass" data-bs-toggle="dropdown"
+          data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false"> <span
+            class="visually-hidden">Search</span> </button>
+        <div class="dropdown-menu header-dropdown-menu">
+          <div class="align-items-center d-flex flex-shrink-0 h-11 px-4">
+            <div class="fw-medium text-body-emphasis">Search</div> <button type="button"
+              class="icon me-n1 ms-auto ph ph-gear"> <span class="visually-hidden">Settings</span> </button>
+          </div>
+          <div class="align-items-center d-flex mb-6 mx-n0.5 px-4"> <i
+              class="fs-5 me-n7 ms-3 ph ph-magnifying-glass position-relative"></i> <input type="text"
+              class="form-control ps-9" placeholder="Type a keyword..." aria-label="Search"> </div>
+          <div class="fs-7 mb-1 px-4 text-body-secondary">Recent Searches</div>
+          <div class="flex-grow-1 px-2" data-simplebar>
+            <div id="recent-searches"></div>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown header-notify"> <button type="button" class="ph ph-bell" data-bs-toggle="dropdown"
+          data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false"> <span
+            class="visually-hidden">Notifications</span> </button>
+        <div class="dropdown-menu header-dropdown-menu">
+          <div class="align-items-center d-flex flex-shrink-0 h-11 px-4">
+            <div class="fw-medium text-body-emphasis">Notifications</div>
+            <div class="d-flex gap-px me-n2 ms-auto"> <button type="button" class="icon ph ph-check-circle"> <span
+                  class="visually-hidden">Mark as read</span> </button> <button type="button"
+                class="icon ph ph-app-window"> <span class="visually-hidden">Open Notifications</span> </button> </div>
+          </div>
+          <div class="flex-grow-1" data-simplebar>
+            <div id="top-notifications"></div>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown header-notify"> <button type="button" class="ph ph-chat-centered-dots"
+          data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false"> <span
+            class="visually-hidden">Direct Messages</span> </button>
+        <div class="dropdown-menu header-dropdown-menu">
+          <div class="align-items-center d-flex flex-shrink-0 h-11 px-4">
+            <div class="fw-medium text-body-emphasis">Notifications</div>
+            <div class="d-flex gap-px me-n2 ms-auto"> <button type="button" class="icon ph ph-check-circle"> <span
+                  class="visually-hidden">Mark as read</span> </button> <button type="button"
+                class="icon ph ph-app-window"> <span class="visually-hidden">Open Notifications</span> </button> <button
+                type="button" class="icon ph ph-gear"> <span class="visually-hidden">Settings</span> </button> </div>
+          </div>
+          <div class="flex-grow-1 px-1" data-simplebar>
+            <div id="top-messages"></div>
+          </div>
+        </div>
+      </li>
+      <li class="d-none d-sm-block dropdown"> <button type="button" class="ph ph-check-circle" data-bs-toggle="dropdown"
+          data-bs-display="static" data-bs-auto-close="outside" aria-expanded="false"> <span
+            class="visually-hidden">Tasks</span> </button>
+        <div class="dropdown-menu header-dropdown-menu">
+          <div class="align-items-center d-flex flex-shrink-0 h-11 px-4">
+            <div class="fw-medium text-body-emphasis">Ongoing Tasks</div>
+            <div class="d-flex gap-px me-n2 ms-auto"> <button type="button" class="icon ph ph-check-circle"> <span
+                  class="visually-hidden">Settings</span> </button> <button type="button" class="icon ph ph-app-window">
+                <span class="visually-hidden">Open Tasks</span> </button> <button type="button" class="icon ph ph-gear">
+                <span class="visually-hidden">Settings</span> </button> </div>
+          </div>
+          <div class="flex-grow-1 pt-2" data-simplebar>
+            <div id="top-tasks"></div>
+          </div>
+        </div>
+      </li>
+      <li> <button id="color-mode-toggle" type="button"> <i class="ph ph-sun"></i> <i class="ph ph-moon"></i> <span
+            class="visually-hidden">Search</span> </button> </li>
+      <li class="d-none d-sm-block dropdown"> <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="avatar avatar-xs rounded" src="england.812d27b0.svg" alt> </button>
+        <div class="dropdown-menu"> <a href class="dropdown-item"> <img class="h-5 rounded" src="japan.8bfd21bb.svg"
+              alt> Japanese </a> <a href class="dropdown-item"> <img class="h-5 rounded" src="germany.80dbbb7c.svg" alt>
+            German </a> <a href class="dropdown-item"> <img class="h-5 rounded" src="china.f97ab81c.svg" alt> Chinese
+          </a> <a href class="dropdown-item"> <img class="h-5 rounded" src="france.2558fda6.svg" alt> French </a> </div>
+      </li>
+      <li class="dropdown"> <button type="button" class="ms-1" data-bs-toggle="dropdown" aria-expanded="false"> <img
+            class="avatar avatar-sm" src="5.3b339843.jpg" alt> </button>
+        <div class="dropdown-menu"> <a href class="dropdown-item"> <i class="ph ph-user-circle"></i> Profile </a> <a
+            href class="dropdown-item"> <i class="ph ph-currency-circle-dollar"></i> Billing </a> <a href
+            class="dropdown-item"> <i class="ph ph-gear"></i> Preferences </a> <a href class="dropdown-item"> <i
+              class="ph ph-sign-out"></i> Logout </a> </div>
+      </li>
+    </ul>
+  </header>
+  <div id="content">
+    <div class="content-header">
+      <h2 class="fs-6 m-0 text-body-emphasis">Website Analytics</h2>
+      <nav aria-label="breadcrumb" class="d-none d-sm-flex ms-6">
+        <ol class="breadcrumb fs-8">
+          <li class="breadcrumb-item"><a href="#">Beyonder Admin</a></li>
+          <li class="active breadcrumb-item" aria-current="page">Dashboards</li>
+        </ol>
+      </nav> <i class="ms-auto"></i>
+      <ul class="d-lg-flex d-none fs-7 nav nav-pills">
+        <li class="nav-item"> <a class="nav-link" href="#">Accounts</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Analytics</a> </li>
+        <li class="dropdown nav-item"> <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#"
+            role="button" aria-expanded="false">Reports</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#"><i class="ph ph-traffic-cone"></i>Website Traffic</a> </li>
+            <li><a class="dropdown-item" href="#"><i class="ph ph-user-circle-plus"></i>New Registrations</a></li>
+            <li><a class="dropdown-item" href="#"><i class="ph ph-devices"></i>Device Usage</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-lg-block d-none ms-1.5 my-3.5 opacity-25 vr"></div>
+      <nav class="gap-1 me-n1 ms-3"> <a href class="icon ph ph-plus-circle"></a> <a href class="icon ph ph-printer"></a>
+        <a href class="icon ph ph-sliders-horizontal"></a> </nav>
+    </div>
+    <div class="masonry mb-n2">
+      <div class="card">
+        <div class="card-banner chart-orange">
+          <div id="map-sessions-country" class="mx-auto"></div>
+        </div>
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-2">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Sessions by Country</h5>
+              <h6 class="card-subtitle">Track user engagement across different regions</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div class="chart chart-bordered chart-md mb-n2" id="chart-sessions-country"> <canvas></canvas> </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-6">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Average Visit Duration</h5>
+              <h5 class="card-subtitle">Measure how long visitors stay on your site</h5>
+            </div>
+            <div class="d-flex gap-1"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered ms-1">Report</a> </div>
+          </div>
+          <div class="chart chart-md mb-5"> <canvas id="chart-visit-duration"></canvas> </div>
+          <ul class="chart-legends">
+            <li> <i class="bg-indigo"></i> <span>Current month</span> </li>
+            <li> <i class="bg-indigo bg-opacity-25"></i> <span>Last month</span> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-6">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Visits by Source</h5>
+              <h6 class="card-subtitle">Break down visits by the channels and platforms</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div class="chart chart-md mb-7"> <canvas id="chart-visits-source"></canvas>
+            <div
+              class="align-items-center d-flex flex-column h-100 justify-content-center position-absolute start-0 top-0 w-100">
+              <div class="fs-3 fw-medium text-body-emphasis">781K</div>
+              <div class="fs-7 text-body-secondary">Total Sessions</div>
+            </div>
+          </div>
+          <div id="list-visits-source"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-5">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Operating Systems</h5>
+              <h6 class="card-subtitle">Track which OS platforms your audience prefers</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div id="list-os" class="mb-n2"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-banner chart-lime p-6">
+          <div class="chart chart-md"> <canvas id="chart-active-users"></canvas> </div>
+        </div>
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-4">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Active Users</h5>
+              <h6 class="card-subtitle">View the number of active users at this moment</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div id="list-active-users"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-banner chart-navy">
+          <div class="chart chart-md my-n2"> <canvas id="chart-site-overview"></canvas> </div>
+        </div>
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-4">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Site Overview</h5>
+              <h5 class="card-subtitle">Overview of site activity and performance metrics</h5>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div id="list-site-overview"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-banner chart-green">
+          <div class="chart mb-n1"> <canvas id="chart-user-acquisition"></canvas> </div>
+        </div>
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-6">
+            <div class="flex-grow-1">
+              <h5 class="card-title">User Acquisition</h5>
+              <h5 class="card-subtitle">How does the website acquire users?</h5>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div id="list-user-acquisition" class="mb-n2"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-8">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Device Sessions</h5>
+              <h5 class="card-subtitle">Monitor session activity across different devices</h5>
+            </div>
+            <div class="d-flex gap-1"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered ms-1">Report</a> </div>
+          </div>
+          <div id="list-device-sessions"></div>
+          <ul class="chart-legends">
+            <li> <i class="bg-info"></i> Desktop </li>
+            <li> <i class="bg-purple"></i> Mobile </li>
+            <li> <i class="bg-danger"></i> Tablet </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-2">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Sessions by Channel</h5>
+              <h6 class="card-subtitle">Track the performance of your traffic sources</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+        </div>
+        <div class="overflow-auto pb-2" data-simplebar>
+          <div id="list-sessions-by-channels"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-5">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Engagements</h5>
+              <h6 class="card-subtitle">Understand the level of user participation and interest</h6>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div class="align-items-center border-bottom d-flex py-3">
+            <div class="flex-grow-1">
+              <h4 class="fs-3 m-0 mb-1">4.970</h4>
+              <div>Daily page views per visitor</div>
+            </div>
+            <div class="align-items-center bg-success d-flex fs-5 fw-medium px-3 py-2 rounded text-white"> 2.5% <i
+                class="fs-5 ms-2 ph ph-trend-up"></i> </div>
+          </div>
+          <div class="align-items-center border-bottom d-flex py-3">
+            <div class="flex-grow-1">
+              <h4 class="fs-3 m-0 mb-1">8.375</h4>
+              <div>Daily page views per visitor</div>
+            </div>
+            <div class="align-items-center bg-danger d-flex fs-5 fw-medium px-3 py-2 rounded text-white"> 3.2% <i
+                class="fs-5 ms-2 ph ph-trend-up"></i> </div>
+          </div>
+          <div class="align-items-center d-flex pt-3">
+            <div class="flex-grow-1">
+              <h4 class="fs-3 m-0 mb-1">65.3%</h4>
+              <div>Average bounce rate</div>
+            </div>
+            <div class="align-items-center bg-danger d-flex fs-5 fw-medium px-3 py-2 rounded text-white"> 0.1% <i
+                class="fs-5 ms-2 ph ph-trend-down"></i> </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="align-items-start d-flex mb-4">
+            <div class="flex-grow-1">
+              <h5 class="card-title">Browser Bounce Rate</h5>
+              <h5 class="card-subtitle">Analyze user engagement based on browser</h5>
+            </div>
+            <div class="d-flex gap-2"> <a class="icon ph ph-info" href></a> <a href
+                class="d-none d-sm-inline-flex link-bordered">Report</a> </div>
+          </div>
+          <div id="list-browser-rate" class="mb-n2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>var t = localStorage.getItem("color-mode") || "light"; t = "dark" === t ? "dark" : "light", document.documentElement.setAttribute("data-bs-theme", t);</script>
+  <script src="index.34023853.js" type="module"></script>
+  <script src="index.643690b1.js" nomodule defer></script>
+  <script src="vendor.39feb43f.js" type="module"></script>
+  <script src="vendor.a63cbedb.js" nomodule defer></script>
+</body>
+
+</html>
