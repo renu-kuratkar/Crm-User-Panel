@@ -83,7 +83,7 @@ const DealData = () => {
                 <option>Sales Pipeline</option>
               </select>
               <select className="border p-2 rounded-md text-sm">
-                <option>Last 30 Days</option>
+                <option>Last 40 Days</option>
               </select>
             </div>
           </div>
