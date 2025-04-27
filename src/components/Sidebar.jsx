@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, setActiveComponent }) => {
       {/* Logo Section */}
       <div className="flex items-center gap-2 mb-6">
         <img src={adialogo} alt="Logo" className="w-10 h-10 object-contain rounded-full" />
-        {isOpen && <h6 className="text-xl text-white font-bold">Adiasquare User</h6>}
+        {isOpen && <h6 className="text-xl text-white font-bold">CRM Panel</h6>}
       </div>
 
       {/* Sidebar Navigation */}
